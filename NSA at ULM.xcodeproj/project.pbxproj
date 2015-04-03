@@ -29,6 +29,9 @@
 		E61DF5F31ACAD1A800093724 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E61DF5F21ACAD1A800093724 /* libsqlite3.dylib */; };
 		E61DF5F71ACADEF200093724 /* AdditionalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DF5F61ACADEF200093724 /* AdditionalCell.swift */; };
 		E61DF5F91ACADFD300093724 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DF5F81ACADFD300093724 /* Activity.swift */; };
+		E660250B1ACD400F00D52C02 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660250A1ACD400F00D52C02 /* DetailViewController.swift */; };
+		E660250D1ACD4E8600D52C02 /* MembersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660250C1ACD4E8600D52C02 /* MembersViewController.swift */; };
+		E660250F1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E660250E1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		E61DF5F51ACAD42300093724 /* NSA at ULM-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSA at ULM-Bridging-Header.h"; sourceTree = "<group>"; };
 		E61DF5F61ACADEF200093724 /* AdditionalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdditionalCell.swift; sourceTree = "<group>"; };
 		E61DF5F81ACADFD300093724 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Activity.swift; path = ../Activity.swift; sourceTree = "<group>"; };
+		E660250A1ACD400F00D52C02 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E660250C1ACD4E8600D52C02 /* MembersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersViewController.swift; sourceTree = "<group>"; };
+		E660250E1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MembersIndoTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,9 @@
 				E61DF5B61ACACF8F00093724 /* AppDelegate.swift */,
 				E61DF5F81ACADFD300093724 /* Activity.swift */,
 				E61DF5BA1ACACF8F00093724 /* Main.storyboard */,
+				E660250E1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift */,
+				E660250C1ACD4E8600D52C02 /* MembersViewController.swift */,
+				E660250A1ACD400F00D52C02 /* DetailViewController.swift */,
 				E61DF5F61ACADEF200093724 /* AdditionalCell.swift */,
 				E61DF5BD1ACACF8F00093724 /* Images.xcassets */,
 				E61DF5BF1ACACF8F00093724 /* LaunchScreen.xib */,
@@ -287,7 +296,10 @@
 			files = (
 				E61DF5F91ACADFD300093724 /* Activity.swift in Sources */,
 				E61DF5F71ACADEF200093724 /* AdditionalCell.swift in Sources */,
+				E660250D1ACD4E8600D52C02 /* MembersViewController.swift in Sources */,
 				E61DF5B71ACACF8F00093724 /* AppDelegate.swift in Sources */,
+				E660250B1ACD400F00D52C02 /* DetailViewController.swift in Sources */,
+				E660250F1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

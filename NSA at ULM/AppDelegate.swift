@@ -15,7 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
        UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        
         Parse.setApplicationId("EvjJjxpniuSMuoenOluzqXDDoS5w3Ala1fglP20O", clientKey: "GY4F0EHcjIrLAC1IcOJMrzl8F6yL9vEGuUQUb2TY")
         PFAnalytics.trackAppOpenedWithLaunchOptionsInBackground(launchOptions, block: nil)
         

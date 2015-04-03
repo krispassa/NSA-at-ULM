@@ -34,19 +34,21 @@ class Activity: UIViewController,UITableViewDelegate{
     {
         
         var feed:PFQuery = PFQuery(className: "feed")
+        feed.addDescendingOrder("createdAt")
+        feed.cachePolicy = PFCachePolicy.NetworkElseCache
         feed.findObjectsInBackgroundWithBlock { (objects:[AnyObject]!, error: NSError!) -> Void in
             if error == nil
             {
-                self.data = objects.reverse() as [PFObject]
+                self.data = objects as [PFObject]
                 self.tableView.reloadData()
             }
         }
         
         
     }
-   func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    return 1
-    }
+  // func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    //return 1
+    //}
     
     func tableView(tableView: UITableView?,numberOfRowsInSection section:Int) -> Int{
         return data.count
@@ -56,13 +58,26 @@ class Activity: UIViewController,UITableViewDelegate{
         let cell: AdditionalCell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as AdditionalCell
         let d: PFObject = self.data[indexPath.row] as PFObject
         cell.Title?.text = d.objectForKey("Title") as? String
-        //cell.created?.text = d.objectForKey("cDate") as? String
-    //println(d)
-    var dataFormatter:NSDateFormatter = NSDateFormatter()
-    dataFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-    cell.created.text = dataFormatter.stringFromDate(d.createdAt)
+    
+        var dataFormatter:NSDateFormatter = NSDateFormatter()
+        dataFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+        cell.created.text = dataFormatter.stringFromDate(d.createdAt)
         return cell
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let d = (data[indexPath.row] as PFObject)
+        var detailviewcontroller :DetailViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DetailViewController")as DetailViewController
+        detailviewcontroller.Detail = (d["detailView"]as String)
+        
+        
+        self.presentViewController(detailviewcontroller, animated: false, completion: nil)
+        
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
