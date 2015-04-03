@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E60088E61ACF017500290182 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60088E51ACF017500290182 /* infoViewController.swift */; };
 		E61DF5B71ACACF8F00093724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DF5B61ACACF8F00093724 /* AppDelegate.swift */; };
 		E61DF5BC1ACACF8F00093724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61DF5BA1ACACF8F00093724 /* Main.storyboard */; };
 		E61DF5BE1ACACF8F00093724 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61DF5BD1ACACF8F00093724 /* Images.xcassets */; };
@@ -45,6 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E60088E51ACF017500290182 /* infoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		E61DF5B11ACACF8F00093724 /* NSA at ULM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSA at ULM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61DF5B51ACACF8F00093724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E61DF5B61ACACF8F00093724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				E61DF5B61ACACF8F00093724 /* AppDelegate.swift */,
 				E61DF5F81ACADFD300093724 /* Activity.swift */,
 				E61DF5BA1ACACF8F00093724 /* Main.storyboard */,
+				E60088E51ACF017500290182 /* infoViewController.swift */,
 				E660250E1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift */,
 				E660250C1ACD4E8600D52C02 /* MembersViewController.swift */,
 				E660250A1ACD400F00D52C02 /* DetailViewController.swift */,
@@ -299,6 +302,7 @@
 				E660250D1ACD4E8600D52C02 /* MembersViewController.swift in Sources */,
 				E61DF5B71ACACF8F00093724 /* AppDelegate.swift in Sources */,
 				E660250B1ACD400F00D52C02 /* DetailViewController.swift in Sources */,
+				E60088E61ACF017500290182 /* infoViewController.swift in Sources */,
 				E660250F1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

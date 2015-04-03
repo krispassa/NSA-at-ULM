@@ -55,6 +55,9 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="81" y="8" width="205" height="71"/>
+                                                    </variation>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZY-kw-u78">
                                                     <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
@@ -71,7 +74,8 @@
                                                             <exclude reference="XCM-cb-raC"/>
                                                         </mask>
                                                     </variation>
-                                                    <variation key="heightClass=regular-widthClass=compact">
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="205" y="1" width="135" height="12"/>
                                                         <mask key="constraints">
                                                             <include reference="XCM-cb-raC"/>
                                                         </mask>
@@ -323,12 +327,13 @@
         <!--Info-->
         <scene sceneID="JMK-gQ-XGh">
             <objects>
-                <viewController id="szO-rb-51O" sceneMemberID="viewController">
+                <viewController id="szO-rb-51O" customClass="infoViewController" customModule="NSA_at_ULM" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jmw-MS-kEg"/>
                         <viewControllerLayoutGuide type="bottom" id="yJz-7S-aVz"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Ql-GX-UPX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -409,12 +414,12 @@
                                                     <exclude reference="bgT-dj-BXb"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <exclude reference="djB-tr-sfj"/>
-                                                    <exclude reference="o1K-nx-aBo"/>
                                                     <exclude reference="8SH-uh-W5l"/>
                                                     <exclude reference="aQb-Ri-5bt"/>
                                                     <exclude reference="XeG-rh-DEQ"/>
                                                     <exclude reference="kpN-cV-1D6"/>
+                                                    <exclude reference="djB-tr-sfj"/>
+                                                    <exclude reference="o1K-nx-aBo"/>
                                                     <exclude reference="08Q-hr-SCQ"/>
                                                     <exclude reference="pBd-BQ-5yr"/>
                                                 </mask>
@@ -427,12 +432,12 @@
                                                     <include reference="bgT-dj-BXb"/>
                                                 </mask>
                                                 <mask key="constraints">
-                                                    <include reference="djB-tr-sfj"/>
-                                                    <include reference="o1K-nx-aBo"/>
                                                     <include reference="8SH-uh-W5l"/>
                                                     <include reference="aQb-Ri-5bt"/>
                                                     <include reference="XeG-rh-DEQ"/>
                                                     <include reference="kpN-cV-1D6"/>
+                                                    <include reference="djB-tr-sfj"/>
+                                                    <include reference="o1K-nx-aBo"/>
                                                     <include reference="08Q-hr-SCQ"/>
                                                     <include reference="pBd-BQ-5yr"/>
                                                 </mask>
