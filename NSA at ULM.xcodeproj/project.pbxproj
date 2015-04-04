@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E60088E61ACF017500290182 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60088E51ACF017500290182 /* infoViewController.swift */; };
+		E615B0671ACFE9630076CF3F /* infoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E615B0661ACFE9630076CF3F /* infoTableViewCell.swift */; };
 		E61DF5B71ACACF8F00093724 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61DF5B61ACACF8F00093724 /* AppDelegate.swift */; };
 		E61DF5BC1ACACF8F00093724 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61DF5BA1ACACF8F00093724 /* Main.storyboard */; };
 		E61DF5BE1ACACF8F00093724 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61DF5BD1ACACF8F00093724 /* Images.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		E60088E51ACF017500290182 /* infoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
+		E615B0661ACFE9630076CF3F /* infoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = infoTableViewCell.swift; sourceTree = "<group>"; };
 		E61DF5B11ACACF8F00093724 /* NSA at ULM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NSA at ULM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61DF5B51ACACF8F00093724 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E61DF5B61ACACF8F00093724 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				E61DF5B61ACACF8F00093724 /* AppDelegate.swift */,
 				E61DF5F81ACADFD300093724 /* Activity.swift */,
 				E61DF5BA1ACACF8F00093724 /* Main.storyboard */,
+				E615B0661ACFE9630076CF3F /* infoTableViewCell.swift */,
 				E60088E51ACF017500290182 /* infoViewController.swift */,
 				E660250E1ACD4F2B00D52C02 /* MembersIndoTableViewCell.swift */,
 				E660250C1ACD4E8600D52C02 /* MembersViewController.swift */,
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E61DF5F91ACADFD300093724 /* Activity.swift in Sources */,
+				E615B0671ACFE9630076CF3F /* infoTableViewCell.swift in Sources */,
 				E61DF5F71ACADEF200093724 /* AdditionalCell.swift in Sources */,
 				E660250D1ACD4E8600D52C02 /* MembersViewController.swift in Sources */,
 				E61DF5B71ACACF8F00093724 /* AppDelegate.swift in Sources */,
