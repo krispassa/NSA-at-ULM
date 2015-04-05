@@ -15,4 +15,5 @@ class MembersIndoTableViewCell: UITableViewCell {
 
     var Name: UILabel  = UILabel()
     var Position: UILabel = UILabel()
+    @IBOutlet weak var imgView: UIImageView!
 }

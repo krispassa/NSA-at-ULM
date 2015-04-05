@@ -42,15 +42,11 @@ class MembersViewController: UIViewController, UITableViewDelegate{
             {
                 self.dta = objects as [PFObject]
                 self.tableView.reloadData()
-               // println(objects)
             }
         }
         
         
     }
-    // func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    //return 1
-    //}
     
     func tableView(tableView: UITableView?,numberOfRowsInSection section:Int) -> Int{
         return dta.count
@@ -62,9 +58,6 @@ class MembersViewController: UIViewController, UITableViewDelegate{
         cell.Name.text = e.objectForKey("Name") as? String
         cell.Position.text = e.objectForKey("Position") as? String
         
-        
-        
-       
     return cell
 }
 }
