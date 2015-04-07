@@ -45,15 +45,11 @@ class infoViewController: UIViewController, UITableViewDelegate{
             {
                 self.query = objects as [PFObject]
                 self.tView.reloadData()
-                // println(objects)
             }
         }
         
         
     }
-    // func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-    //return 1
-    //}
     
     func tableView(tableView: UITableView?,numberOfRowsInSection section:Int) -> Int{
         return query.count
@@ -67,6 +63,14 @@ class infoViewController: UIViewController, UITableViewDelegate{
         cell.email.text = e.objectForKey("email") as? String
         cell.phone.text = e.objectForKey("phone") as? String
         
+        let immage:PFFile = e["img"] as PFFile
+        immage.getDataInBackgroundWithBlock { (imageData: NSData!, error:NSError!) -> Void in
+            if error == nil
+            {
+                let pic:UIImage = UIImage(data: imageData)!
+                cell.imgur.image = pic
+            }
+        }
         
         return cell
     }

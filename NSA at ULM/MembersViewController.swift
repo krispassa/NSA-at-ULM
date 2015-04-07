@@ -58,6 +58,14 @@ class MembersViewController: UIViewController, UITableViewDelegate{
         cell.Name.text = e.objectForKey("Name") as? String
         cell.Position.text = e.objectForKey("Position") as? String
         
+        let _image:PFFile = e["img"] as PFFile
+        _image.getDataInBackgroundWithBlock { (image_Data: NSData!, error:NSError!) -> Void in
+            if error == nil
+            {
+                let pic:UIImage = UIImage(data: image_Data)!
+                cell.imgView.image = pic
+            }
+        }
     return cell
 }
 }
